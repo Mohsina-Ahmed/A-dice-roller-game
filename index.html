@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Dice Game</title>
+</head>
+
+<body>
+  <main>
+    <section class="player player--0 player--active">
+      <h2 class="name" id="name--0">Player 1</h2>
+      <p class="Pname">
+        Player Name: <b>
+          <div class="name" id="playerName1"></div>
+        </b>
+
+      <div class="divSetPlayerName1">
+        <input type="text" id="playerNameInput1" placeholder="Enter player 1 name here" />
+        <button class="btn btn--name" onclick="setPlayerName1();">📛Set player1 name</button>
+
+      </div>
+
+      </p>
+      <p class="score" id="score--0">43</p>
+      <div>
+        <p class="score win-message0">Winner
+
+        </p>
+      </div>
+      <div class="current">
+        <p class="current-label">Current</p>
+        <p class="current-score" id="current--0">0</p>
+      </div>
+    </section>
+    <section class="player player--1">
+      <h2 class="name" id="name--1">Player 2</h2>
+      <p class="Pname">
+        Player Name: <b>
+          <div class="name" id="playerName2"></div>
+        </b>
+
+      <div class="divSetPlayerName2">
+        <input type="text" id="playerNameInput2" placeholder="Enter player 2 name here" />
+        <button class="btn" onclick="setPlayerName2();">📛Set player2 name</button>
+
+      </div>
+
+      </p>
+      <p class="score" id="score--1">24</p>
+      <div>
+        <p class="score win-message1">Winner
+
+        </p>
+      </div>
+      <div class="current">
+        <p class="current-label">Current</p>
+        <p class="current-score" id="current--1">0</p>
+      </div>
+    </section>
+
+    <img src="dice-5.png" alt="Playing dice" class="dice" />
+    <button class="btn btn--new">🔄 New game</button>
+    <button class="btn btn--roll">🎲 Roll dice</button>
+    <button class="btn btn--hold">📥 Hold</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
